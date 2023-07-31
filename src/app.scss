@@ -3,6 +3,9 @@ $appbgcolor: #181c1c;
 $textcolor: #F1FAEE;
 $redcolor: #E63946;
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +18,8 @@ body {
     // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     // font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    font-family: 'Times New Roman', Times, serif;
+    // font-family: 'Times New Roman', Times, serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 #app {
@@ -38,9 +42,8 @@ body {
         justify-content: center;
         width: 100%;
         min-height: 100vh;
-        background-color: rgba($color: #000000, $alpha: .8);
+        background-color: rgba($color: #000000, $alpha: .5);
         padding-bottom: 5rem;
-
 
 
         .container {
@@ -49,7 +52,7 @@ body {
             // background-color: burlywood;
             // background-color: $redcolor;
             width: 100%;
-            padding-top: 2rem;
+            padding-top: 1rem;
             padding-bottom: 2rem;
 
 
@@ -60,319 +63,30 @@ body {
 
             flex-wrap: wrap;
 
-
-
-
-            .container-config {
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                flex-wrap: wrap;
+            .container-color {
                 width: 100%;
-                margin-bottom: .5rem;
-                flex-wrap: wrap;
+                max-width: 330px;
 
-                // background-color: black;
-
-                .config-header {
-                    flex-basis: 100%;
-                    // height: 3rem;
-                    // background: red;
-                    font-size: 2.1rem;
-                    letter-spacing: .2rem;
-                    font-weight: 800;
-                    color: white;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 1rem;
-                    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
-
-                }
-
-                .config-input {
-                    width: 180px;
-                    height: 2.5rem;
-                    border: none;
-                    outline: none;
-                    border-radius: 17px;
-
-                    padding: .5rem .5rem .5rem .7rem;
-                    z-index: 2;
-                    font-size: 1rem;
-                    color: black;
-                    background-color: white;
-                    transition-duration: .2s;
-                    // border: 1px solid black;
-                    // border: 1px solid white;
-                    // background-color: rgba($color: #000000, $alpha: 0.0)
-                }
-
-                .config-submit-change {
-
-
-                    border-top-right-radius: 0 !important;
-                    border-bottom-right-radius: 0 !important;
-
-                }
-
-                .config-submit {
-
-                    transition-duration: .2s;
-                    width: 0;
-                    // width:75px;
-                    height: 2.5rem;
-                    outline: none;
-                    border: none;
-                    border-top-right-radius: 17px;
-                    border-bottom-right-radius: 17px;
-                    background-color: $redcolor;
-                    color: white;
-                    font-size: .95rem;
-                    font-weight: 400;
-
-                    z-index: 3;
-                    border-top-left-radius: 0;
-                    border-bottom-left-radius: 0;
-
-
-
-                }
-
-                .config-submit-show {
-                    // border: 1px solid black !important;
-                    width: 75px !important;
-                }
-            }
-
-            .container-content {
-                margin-top: .5rem;
-                width: 100%;
-                // background-color: black;
-                border-radius: 15px;
-                // background-color: white;
+                background-color: rgba($color: #000000, $alpha: .8);
 
                 display: flex;
+
                 align-items: center;
                 flex-direction: column;
-                flex-wrap: wrap;
-                color: white;
-                gap: 2rem;
-
-                .obsmove {
-                    transition-duration: .3s;
-                    transform: scale(1.2)
-                }
-
-                .content-top {
-                    display: flex;
-                    justify-content: center;
-                    width: 230px;
-                    position: relative;
-                    flex-wrap: wrap;
-
-
-                    .top-cloud {
-                        width: 150px;
-
-                    }
-
-                    .top-temp {
-
-                        position: absolute;
-                        right: 0;
-                        top: -.7rem;
-                        // font-size: 4.5rem;
-                        font-weight: 800;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        // background-color: white;
-                        border-radius: 10px;
-                        font-size: 2.7rem;
-                    }
-
-                }
-
-                .content-mid {
-                    width: 240px;
-
-                    // background-color: green;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-
-                    .mid-wind {
-
-                        flex-basis: 33.33%;
-                        height: 5rem;
-                        // background-color: peru;
-                        position: relative;
-                        color: rgba($color: #ffffff, $alpha: .7);
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        .wind-icon {
-                            position: absolute;
-                            top: 1.8rem;
-                            left: 8%;
-                            font-size: 1rem;
-                        }
-
-                        .wind-value {
-
-                            font-size: 1.7rem;
-
-                        }
-
-                        .wind-direction {
-                            position: absolute;
-                            top: 2.9rem;
-                            left: 24%;
-                            font-size: 1.2rem;
-
-                        }
-
-                        .wind-mph {
-                            position: absolute;
-                            top: .8rem;
-                            right: 7%;
-                            font-size: .7rem;
-                        }
-
-                    }
-
-                    .mid-rain {
-
-                        flex-basis: 33.33%;
-                        height: 5rem;
-                        // background-color: peru;
-                        position: relative;
-                        color: rgba($color: #ffffff, $alpha: .7);
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        .rain-icon {
-                            position: absolute;
-                            top: 1.8rem;
-                            left: 4%;
-                            font-size: 1rem;
-                        }
-
-                        .rain-value {
-                            position: relative;
-
-                            font-size: 1.7rem;
-
-
-                        }
-
-                        .rain-chance {
-                            position: absolute;
-                            top: 2.9rem;
-                            left: 15%;
-                            font-size: 1.2rem;
-
-                        }
-
-                        .rain-per {
-                            position: absolute;
-
-                            top: .6rem;
-                            right: 13%;
-                            font-size: 1rem;
-                        }
-                    }
-
-                    .mid-humidity {
-
-                        flex-basis: 33.33%;
-                        height: 5rem;
-                        // background-color: peru;
-                        position: relative;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        color: rgba($color: #ffffff, $alpha: .7);
-
-                        .humidity-icon {
-                            position: absolute;
-                            top: 1.8rem;
-                            left: 10%;
-                            font-size: 1rem;
-                        }
-
-                        .humidity-value {
-                            position: relative;
-                            font-size: 1.7rem;
-
-                        }
-
-                        .humidity-name {
-                            position: absolute;
-                            top: 2.9rem;
-                            left: 12%;
-                            font-size: 1.1rem;
-
-                        }
-
-                        .humidity-per {
-                            position: absolute;
-                            top: .6rem;
-                            right: 13%;
-                            font-size: 1rem;
-                        }
-
-                    }
-
-
-
-
-
-                }
-
-                .content-bottom {
-                    // margin-top: 1rem;
-                    width: 250px;
-                    // height: 5rem;
-
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-wrap: wrap;
-                    // background-color: blue;
-
-                    .bottom-icon {
-                        flex-basis: 100%;
-                        font-size: 4.5rem;
-                    }
-
-                    .bottom-value {
-                        margin-top: .5rem;
-                        flex-basis: 100%;
-                        font-size: 2rem;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        color: rgba($color: #ffffff, $alpha: .7)
-                    }
-                }
-
-
-
-
+                padding-top: 1.5rem;
+                padding-bottom: 2rem;
+                border-radius: 20px;
+                // padding: 3rem;
 
 
 
             }
+
+
+
+
+
+
         }
     }
 }
@@ -398,7 +112,7 @@ body {
             justify-content: center;
             width: 100%;
             min-height: 100vh;
-            background-color: rgba($color: #000000, $alpha: .8);
+            background-color: rgba($color: #000000, $alpha: .5);
             padding-bottom: 5rem;
 
 
@@ -420,310 +134,25 @@ body {
 
                 flex-wrap: wrap;
 
-
-
-
-                .container-config {
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    margin-bottom: .5rem;
-
-                    .config-header {
-                        flex-basis: 100%;
-                        // height: 3rem;
-                        // background: red;
-                        font-size: 3rem;
-                        letter-spacing: .2rem;
-                        font-weight: 800;
-                        color: white;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 1rem;
-                        text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
-
-                    }
-
-
-                    .config-input {
-                        width: 250px;
-                        height: 2.9rem;
-                        border: none;
-                        outline: none;
-                        border-radius: 17px;
-
-                        padding: .5rem .5rem .5rem .7rem;
-                        z-index: 2;
-                        font-size: 1.1rem;
-                        color: black;
-                        background-color: white;
-                        transition-duration: .2s;
-                        // border: 1px solid black;
-                        // border: 1px solid white;
-                        // background-color: rgba($color: #000000, $alpha: 0.0)
-                    }
-
-                    .config-submit-change {
-
-
-                        border-top-right-radius: 0 !important;
-                        border-bottom-right-radius: 0 !important;
-
-                    }
-
-                    .config-submit {
-
-                        transition-duration: .2s;
-                        width: 0;
-                        // width:75px;
-                        height: 2.9rem;
-                        outline: none;
-                        border: none;
-                        border-top-right-radius: 17px;
-                        border-bottom-right-radius: 17px;
-                        background-color: $redcolor;
-                        color: white;
-                        font-size: 1rem;
-                        font-weight: 400;
-
-                        z-index: 3;
-
-
-                    }
-
-                    .config-submit-show {
-                        // border: 1px solid black !important;
-                        width: 85px !important;
-                    }
-                }
-
-                .container-content {
-                    margin-top: .5rem;
-                    width: 100%;
-                    // background-color: black;
-                    border-radius: 15px;
-                    // background-color: white;
+                .container-color {
+                    width: 500px;
+                    max-width: none;
+                    background-color: rgba($color: #000000, $alpha: .8);
 
                     display: flex;
+
                     align-items: center;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    color: white;
-                    gap: 2rem;
-
-                    .content-top {
-                        display: flex;
-                        justify-content: center;
-                        width: 330px;
-                        position: relative;
-                        flex-wrap: wrap;
-
-
-
-                        .top-cloud {
-                            width: 210px;
-
-                        }
-
-                        .top-temp {
-
-                            position: absolute;
-                            right: .5rem;
-                            top: .5rem;
-                            // font-size: 4.5rem;
-                            font-weight: 800;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            // background-color: white;
-                            border-radius: 10px;
-                            font-size: 2.7rem;
-                        }
-
-                    }
-
-                    .content-mid {
-                        width: 240px;
-
-                        // background-color: green;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-
-                        .mid-wind {
-
-                            flex-basis: 33.33%;
-                            height: 5rem;
-                            // background-color: peru;
-                            position: relative;
-                            color: rgba($color: #ffffff, $alpha: .7);
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            .wind-icon {
-                                position: absolute;
-                                top: 1.8rem;
-                                left: 8%;
-                                font-size: 1rem;
-                            }
-
-                            .wind-value {
-
-                                font-size: 1.7rem;
-
-                            }
-
-                            .wind-direction {
-                                position: absolute;
-                                top: 2.9rem;
-                                left: 24%;
-                                font-size: 1.2rem;
-
-                            }
-
-                            .wind-mph {
-                                position: absolute;
-                                top: .8rem;
-                                right: 7%;
-                                font-size: .7rem;
-                            }
-
-                        }
-
-                        .mid-rain {
-
-                            flex-basis: 33.33%;
-                            height: 5rem;
-                            // background-color: peru;
-                            position: relative;
-                            color: rgba($color: #ffffff, $alpha: .7);
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            .rain-icon {
-                                position: absolute;
-                                top: 1.8rem;
-                                left: 4%;
-                                font-size: 1rem;
-                            }
-
-                            .rain-value {
-                                position: relative;
-
-                                font-size: 1.7rem;
-
-
-                            }
-
-                            .rain-chance {
-                                position: absolute;
-                                top: 2.9rem;
-                                left: 15%;
-                                font-size: 1.2rem;
-
-                            }
-
-                            .rain-per {
-                                position: absolute;
-
-                                top: .6rem;
-                                right: 13%;
-                                font-size: 1rem;
-                            }
-                        }
-
-                        .mid-humidity {
-
-                            flex-basis: 33.33%;
-                            height: 5rem;
-                            // background-color: peru;
-                            position: relative;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            color: rgba($color: #ffffff, $alpha: .7);
-
-                            .humidity-icon {
-                                position: absolute;
-                                top: 1.8rem;
-                                left: 10%;
-                                font-size: 1rem;
-                            }
-
-                            .humidity-value {
-                                position: relative;
-                                font-size: 1.7rem;
-
-                            }
-
-                            .humidity-name {
-                                position: absolute;
-                                top: 2.9rem;
-                                left: 12%;
-                                font-size: 1.1rem;
-
-                            }
-
-                            .humidity-per {
-                                position: absolute;
-                                top: .6rem;
-                                right: 13%;
-                                font-size: 1rem;
-                            }
-
-                        }
-
-
-
-
-
-                    }
-
-                    .content-bottom {
-                        // margin-top: 1rem;
-                        width: 250px;
-                        // height: 5rem;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-                        flex-wrap: wrap;
-                        // background-color: blue;
-
-                        .bottom-icon {
-                            flex-basis: 100%;
-                            font-size: 4.5rem;
-                        }
-
-                        .bottom-value {
-                            margin-top: .5rem;
-                            flex-basis: 100%;
-                            font-size: 2rem;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: rgba($color: #ffffff, $alpha: .7)
-                        }
-                    }
-
-
-
-
-
-
+                    border-radius: 20px;
+                    padding: 3rem;
 
                 }
+
+
+
+
+
             }
         }
     }
@@ -750,7 +179,7 @@ body {
             justify-content: center;
             width: 100%;
             min-height: 100vh;
-            background-color: rgba($color: #000000, $alpha: .8);
+            background-color: rgba($color: #000000, $alpha: .5);
             padding-bottom: 5rem;
 
 
@@ -772,324 +201,21 @@ body {
 
                 flex-wrap: wrap;
 
-
-
-
-                .container-config {
-                    display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    // background-color: $appbgcolor;
-                    border-radius: 30px;
-                    margin-bottom: .5rem;
-
-                    // background-color: red;
-                    .config-header {
-                        flex-basis: 100%;
-                        // height: 3rem;
-                        // background: red;
-                        font-size: 4.5rem;
-                        letter-spacing: .2rem;
-                        font-weight: 800;
-                        color: white;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 2rem;
-                        text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
-
-                    }
-
-
-
-                    .config-input {
-                        width: 420px;
-                        height: 3.3rem;
-                        border: none;
-                        outline: none;
-                        border-radius: 17px;
-
-                        padding: .5rem .5rem .5rem .7rem;
-                        z-index: 2;
-                        font-size: 1.4rem;
-                        color: black;
-                        background-color: white;
-                        transition-duration: .2s;
-                        // border: 1px solid black;
-                        // border: 1px solid white;
-                        // background-color: rgba($color: #000000, $alpha: 0.0)
-                    }
-
-                    .config-submit-change {
-
-
-                        border-top-right-radius: 0 !important;
-                        border-bottom-right-radius: 0 !important;
-
-                    }
-
-                    .config-submit {
-
-                        transition-duration: .2s;
-                        width: 0;
-                        // width:75px;
-                        height: 3.3rem;
-                        outline: none;
-                        border: none;
-                        border-top-right-radius: 17px;
-                        border-bottom-right-radius: 17px;
-                        background-color: $redcolor;
-                        color: white;
-                        font-size: .95rem;
-                        font-weight: 400;
-
-                        z-index: 3;
-
-
-                    }
-
-                    .config-submit-show {
-                        // border: 1px solid black !important;
-                        width: 100px !important;
-                    }
-                }
-
-                .container-content {
-                    margin-top: .9rem;
-                    width: 100%;
-                    // background-color: black;
-                    border-radius: 15px;
-                    // background-color: white;
+                .container-color {
+                    max-width: none;
+                    width: 800px;
+                    background-color: rgba($color: #000000, $alpha: .8);
 
                     display: flex;
+
                     align-items: center;
                     flex-direction: column;
-                    flex-wrap: wrap;
-                    color: white;
-                    gap: 3rem;
 
-                    .content-top {
-                        display: flex;
-                        justify-content: center;
-                        width: 400px;
-                        position: relative;
-                        flex-wrap: wrap;
-
-
-
-                        .top-cloud {
-                            width: 320px;
-
-                        }
-
-                        .top-temp {
-
-                            position: absolute;
-                            right: .5rem;
-                            top: .5rem;
-                            // font-size: 4.5rem;
-                            font-weight: 800;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            // background-color: white;
-                            border-radius: 10px;
-                            font-size: 3.7rem;
-                        }
-
-                    }
-
-                    .content-mid {
-                        width: 500px;
-
-                        // background-color: green;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-
-                        .mid-wind {
-
-                            flex-basis: 33.33%;
-                            height: 8rem;
-                            // background-color: peru;
-                            position: relative;
-                            color: rgba($color: #ffffff, $alpha: .7);
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            flex-wrap: wrap;
-
-                            .wind-icon {
-                                position: absolute;
-                                top: 3rem;
-                                left: 1.2rem;
-                                font-size: 2rem;
-                            }
-
-                            .wind-value {
-                                flex-basis: 100%;
-                                font-size: 3.5rem;
-
-                                display: flex;
-                                justify-content: center;
-
-                            }
-
-                            .wind-direction {
-                                position: absolute;
-                                top: 5rem;
-                                left: 27%;
-                                // top: 5rem;
-
-                                font-size: 2.3rem;
-
-
-                            }
-
-                            .wind-mph {
-                                position: absolute;
-                                top: 1rem;
-                                right: 1.4rem;
-                                font-size: 1.2rem;
-                            }
-
-                        }
-
-                        .mid-rain {
-
-                            flex-basis: 33.33%;
-                            height: 8rem;
-                            // background-color: peru;
-                            position: relative;
-                            color: rgba($color: #ffffff, $alpha: .7);
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            .rain-icon {
-                                position: absolute;
-                                top: 3rem;
-                                left: 1.1rem;
-                                font-size: 2rem;
-                            }
-
-                            .rain-value {
-                                position: relative;
-
-                                font-size: 3.5rem;
-
-
-                            }
-
-                            .rain-chance {
-                                position: absolute;
-                                top: 5rem;
-                                left: 15%;
-
-
-                                font-size: 2.3rem;
-
-
-                            }
-
-                            .rain-per {
-                                position: absolute;
-
-                                top: 1rem;
-                                right: 2rem;
-                                font-size: 1.7rem;
-                            }
-                        }
-
-                        .mid-humidity {
-
-                            flex-basis: 33.33%;
-                            height: 8rem;
-                            // background-color: peru;
-                            position: relative;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-
-                            color: rgba($color: #ffffff, $alpha: .7);
-
-                            .humidity-icon {
-                                position: absolute;
-                                top: 3rem;
-                                left: 1.3rem;
-                                font-size: 2rem;
-                            }
-
-                            .humidity-value {
-                                position: relative;
-                                font-size: 3.5rem;
-
-
-                            }
-
-                            .humidity-name {
-                                position: absolute;
-                                top: 5rem;
-                                left: 10%;
-                                font-size: 2.2rem;
-                            }
-
-                            .humidity-per {
-                                position: absolute;
-                                top: 1rem;
-                                right: 2rem;
-                                font-size: 1.7rem;
-                            }
-
-                        }
-
-
-
-
-
-                    }
-
-                    .content-bottom {
-                        margin-top: 1rem;
-                        width: 500px;
-                        // height: 5rem;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-start;
-                        flex-wrap: wrap;
-                        // background-color: blue;
-
-                        .bottom-icon {
-                            flex-basis: 100%;
-                            font-size: 7rem;
-                        }
-
-                        .bottom-value {
-                            margin-top: .5rem;
-                            flex-basis: 100%;
-                            font-size: 3rem;
-
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            color: rgba($color: #ffffff, $alpha: .7)
-                        }
-                    }
-
-
-
-
-
-
+                    border-radius: 20px;
+                    padding: 3rem;
 
                 }
+
             }
         }
     }

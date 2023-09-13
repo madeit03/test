@@ -18,14 +18,14 @@ $redcolor: #E63946;
         flex-basis: 100%;
         // height: 3rem;
         // background: red;
-        font-size: 2.1rem;
-        letter-spacing: .2rem;
+        font-size: 2rem;
+        letter-spacing: .15rem;
         font-weight: 800;
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
         text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 
     }
@@ -33,10 +33,10 @@ $redcolor: #E63946;
     .config-input {
         font-family: Arial, Helvetica, sans-serif;
         width: 180px;
-        height: 2.5rem;
+        height: 2.3rem;
         border: none;
         outline: none;
-        border-radius: 17px;
+        border-radius: 10px;
 
         padding: .5rem .5rem .5rem .7rem;
         z-index: 2;
@@ -62,11 +62,11 @@ $redcolor: #E63946;
         transition-duration: .2s;
         width: 0;
         // width:75px;
-        height: 2.5rem;
+        height: 2.3rem;
         outline: none;
         border: none;
-        border-top-right-radius: 17px;
-        border-bottom-right-radius: 17px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         background-color: $redcolor;
         color: white;
         font-size: .95rem;
@@ -100,25 +100,25 @@ $redcolor: #E63946;
             flex-basis: 100%;
             // height: 3rem;
             // background: red;
-            font-size: 3rem;
+            font-size: 2.4rem;
             letter-spacing: .2rem;
             font-weight: 800;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 1rem;
+            margin-bottom: 1.4rem;
             text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 
         }
 
 
         .config-input {
-            width: 250px;
-            height: 2.9rem;
+            width: 230px;
+            height: 2.7rem;
             border: none;
             outline: none;
-            border-radius: 17px;
+            border-radius: 10px;
 
             padding: .5rem .5rem .5rem .7rem;
             z-index: 2;
@@ -144,11 +144,11 @@ $redcolor: #E63946;
             transition-duration: .2s;
             width: 0;
             // width:75px;
-            height: 2.9rem;
+            height: 2.7rem;
             outline: none;
             border: none;
-            border-top-right-radius: 17px;
-            border-bottom-right-radius: 17px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
             background-color: $redcolor;
             color: white;
             font-size: 1rem;
@@ -168,11 +168,12 @@ $redcolor: #E63946;
 
 @media(min-width:992px) {
     .container-config {
+
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-wrap: wrap;
-        width: 520px;
+        width: 420px;
         border-radius: 30px;
         margin-bottom: .5rem;
 
@@ -182,14 +183,14 @@ $redcolor: #E63946;
             flex-basis: 100%;
             // height: 3rem;
             // background: red;
-            font-size: 4.5rem;
+            font-size: 3.7rem;
             letter-spacing: .2rem;
             font-weight: 800;
             color: white;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
 
         }
@@ -197,11 +198,11 @@ $redcolor: #E63946;
 
 
         .config-input {
-            width: 420px;
-            height: 3.3rem;
+            width: 310px;
+            height: 3rem;
             border: none;
             outline: none;
-            border-radius: 17px;
+            border-radius: 10px;
 
             padding: .5rem .5rem .5rem .7rem;
             z-index: 2;
@@ -227,11 +228,11 @@ $redcolor: #E63946;
             transition-duration: .2s;
             width: 0;
             // width: 75px;
-            height: 3.3rem;
+            height: 3rem;
             outline: none;
             border: none;
-            border-top-right-radius: 17px;
-            border-bottom-right-radius: 17px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
             background-color: $redcolor;
             color: white;
             font-size: .95rem;

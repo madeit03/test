@@ -4,7 +4,7 @@ $textcolor: #F1FAEE;
 $redcolor: #E63946;
 
 .container-content {
-    margin-top: .5rem;
+    margin-top: 1.5rem;
     width: 100%;
     // background-color: black;
     border-radius: 15px;
@@ -15,7 +15,7 @@ $redcolor: #E63946;
     flex-direction: column;
     flex-wrap: wrap;
     color: white;
-    gap: 2rem;
+    gap: 1rem;
 
     .obsmove {
         transition-duration: .3s;
@@ -23,6 +23,7 @@ $redcolor: #E63946;
     }
 
     .content-top {
+
         display: flex;
         justify-content: center;
         width: 230px;
@@ -53,7 +54,7 @@ $redcolor: #E63946;
     }
 
     .content-mid {
-        width: 240px;
+        width: 220px;
 
         // background-color: green;
 
@@ -197,7 +198,7 @@ $redcolor: #E63946;
     }
 
     .content-bottom {
-        // margin-top: 1rem;
+        // margin-top: -1rem;
         width: 250px;
         // height: 5rem;
 
@@ -209,13 +210,13 @@ $redcolor: #E63946;
 
         .bottom-icon {
             flex-basis: 100%;
-            font-size: 4.5rem;
+            font-size: 4rem;
         }
 
         .bottom-value {
             margin-top: .5rem;
             flex-basis: 100%;
-            font-size: 2rem;
+            font-size: 1.7rem;
 
             display: flex;
             justify-content: center;
@@ -264,7 +265,7 @@ $redcolor: #E63946;
             .top-temp {
 
                 position: absolute;
-                right: .5rem;
+                right: 3rem;
                 top: .5rem;
                 // font-size: 4.5rem;
                 font-weight: 800;
@@ -279,7 +280,7 @@ $redcolor: #E63946;
         }
 
         .content-mid {
-            width: 240px;
+            width: 270px;
 
             // background-color: green;
 
@@ -298,33 +299,35 @@ $redcolor: #E63946;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // background-color: black;
+
 
                 .wind-icon {
                     position: absolute;
-                    top: 1.8rem;
+                    top: 1.5rem;
                     left: 8%;
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                 }
 
                 .wind-value {
 
-                    font-size: 1.7rem;
+                    font-size: 2rem;
 
                 }
 
                 .wind-direction {
                     position: absolute;
-                    top: 2.9rem;
-                    left: 24%;
+                    top: 3.2rem;
+                    left: 27%;
                     font-size: 1.2rem;
 
                 }
 
                 .wind-mph {
                     position: absolute;
-                    top: .8rem;
-                    right: 7%;
-                    font-size: .7rem;
+                    top: .5rem;
+                    right: 10%;
+                    font-size: 1rem;
                 }
 
             }
@@ -340,12 +343,13 @@ $redcolor: #E63946;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                // background-color: black;
 
                 .rain-icon {
                     position: absolute;
-                    top: 1.8rem;
+                    top: 1.5rem;
                     left: 4%;
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                 }
 
                 .rain-value {
@@ -358,8 +362,8 @@ $redcolor: #E63946;
 
                 .rain-chance {
                     position: absolute;
-                    top: 2.9rem;
-                    left: 15%;
+                    top: 3.2rem;
+                    left: 22%;
                     font-size: 1.2rem;
 
                 }
@@ -368,8 +372,8 @@ $redcolor: #E63946;
                     position: absolute;
 
                     top: .6rem;
-                    right: 13%;
-                    font-size: 1rem;
+                    right: 15%;
+                    font-size: 1.3rem;
                 }
             }
 
@@ -385,12 +389,13 @@ $redcolor: #E63946;
                 align-items: center;
 
                 color: rgba($color: #ffffff, $alpha: .7);
+                // background-color: black;
 
                 .humidity-icon {
                     position: absolute;
-                    top: 1.8rem;
+                    top: 1.5rem;
                     left: 10%;
-                    font-size: 1rem;
+                    font-size: 1.5rem;
                 }
 
                 .humidity-value {
@@ -401,17 +406,17 @@ $redcolor: #E63946;
 
                 .humidity-name {
                     position: absolute;
-                    top: 2.9rem;
-                    left: 12%;
-                    font-size: 1.1rem;
+                    top: 3.2rem;
+                    left: 19%;
+                    font-size: 1.2rem;
 
                 }
 
                 .humidity-per {
                     position: absolute;
                     top: .6rem;
-                    right: 13%;
-                    font-size: 1rem;
+                    right: 17%;
+                    font-size: 1.3rem;
                 }
 
             }
@@ -461,7 +466,12 @@ $redcolor: #E63946;
 
 @media(min-width:992px) {
     .container-content {
+
         margin-top: .9rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
         width: 100%;
         // background-color: black;
         border-radius: 15px;
@@ -472,26 +482,31 @@ $redcolor: #E63946;
         flex-direction: column;
         flex-wrap: wrap;
         color: white;
-        gap: 3rem;
+        gap: 2rem;
+        // margin: 0;
+        // padding: 0;
 
         .content-top {
             display: flex;
             justify-content: center;
-            width: 400px;
+            width: 380px;
             position: relative;
+            top: 0;
+            left: 0;
             flex-wrap: wrap;
+            // background-color: orange;
 
 
 
             .top-cloud {
-                width: 320px;
+                width: 290px;
 
             }
 
             .top-temp {
 
                 position: absolute;
-                right: .5rem;
+                right: 2rem;
                 top: .5rem;
                 // font-size: 4.5rem;
                 font-weight: 800;
@@ -500,13 +515,13 @@ $redcolor: #E63946;
                 justify-content: center;
                 // background-color: white;
                 border-radius: 10px;
-                font-size: 3.7rem;
+                font-size: 3.8rem;
             }
 
         }
 
         .content-mid {
-            width: 500px;
+            width: 400px;
 
             // background-color: green;
 
@@ -530,13 +545,13 @@ $redcolor: #E63946;
                 .wind-icon {
                     position: absolute;
                     top: 3rem;
-                    left: 1.2rem;
-                    font-size: 2rem;
+                    left: 1.5rem;
+                    font-size: 1.7rem;
                 }
 
                 .wind-value {
                     flex-basis: 100%;
-                    font-size: 3.5rem;
+                    font-size: 3rem;
 
                     display: flex;
                     justify-content: center;
@@ -549,7 +564,7 @@ $redcolor: #E63946;
                     left: 27%;
                     // top: 5rem;
 
-                    font-size: 2.3rem;
+                    font-size: 1.8rem;
 
 
                 }
@@ -579,13 +594,13 @@ $redcolor: #E63946;
                     position: absolute;
                     top: 3rem;
                     left: 1.1rem;
-                    font-size: 2rem;
+                    font-size: 1.7rem;
                 }
 
                 .rain-value {
                     position: relative;
 
-                    font-size: 3.5rem;
+                    font-size: 2.7rem;
 
 
                 }
@@ -593,10 +608,8 @@ $redcolor: #E63946;
                 .rain-chance {
                     position: absolute;
                     top: 5rem;
-                    left: 15%;
-
-
-                    font-size: 2.3rem;
+                    left: 18%;
+                    font-size: 1.8rem;
 
 
                 }
@@ -604,8 +617,8 @@ $redcolor: #E63946;
                 .rain-per {
                     position: absolute;
 
-                    top: 1rem;
-                    right: 2rem;
+                    top: .7rem;
+                    right: 1.5rem;
                     font-size: 1.7rem;
                 }
             }
@@ -627,12 +640,12 @@ $redcolor: #E63946;
                     position: absolute;
                     top: 3rem;
                     left: 1.3rem;
-                    font-size: 2rem;
+                    font-size: 1.7rem;
                 }
 
                 .humidity-value {
                     position: relative;
-                    font-size: 3.5rem;
+                    font-size: 2.7rem;
 
 
                 }
@@ -641,13 +654,13 @@ $redcolor: #E63946;
                     position: absolute;
                     top: 5rem;
                     left: 10%;
-                    font-size: 2.2rem;
+                    font-size: 1.8rem;
                 }
 
                 .humidity-per {
                     position: absolute;
-                    top: 1rem;
-                    right: 2rem;
+                    top: .7rem;
+                    right: 1.5rem;
                     font-size: 1.7rem;
                 }
 
@@ -661,7 +674,7 @@ $redcolor: #E63946;
 
         .content-bottom {
             margin-top: 1rem;
-            width: 500px;
+            width: 400px;
             // height: 5rem;
 
             display: flex;
@@ -672,13 +685,13 @@ $redcolor: #E63946;
 
             .bottom-icon {
                 flex-basis: 100%;
-                font-size: 7rem;
+                font-size: 5rem;
             }
 
             .bottom-value {
-                margin-top: .5rem;
+
                 flex-basis: 100%;
-                font-size: 3rem;
+                font-size: 2rem;
 
                 display: flex;
                 justify-content: center;

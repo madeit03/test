@@ -28,7 +28,6 @@ const handleBlur = (inputTime, setInputTime, inputref, submit) => {
 
     setInputTime({
         timeblur1: setTimeout(() => {
-
             submit.current.classList = "config-submit";
         }, 0)
     })

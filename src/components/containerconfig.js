@@ -13,6 +13,7 @@ const ContainerConfig = (props) => {
             }} onBlur={() => {
                 handleBlur(inputTime, setInputTime, input, submit);
             }} onKeyDown={(e) => { handleKey(e, inputValue, input, appError, obsEle, setInptValue, setData, setErrorTime, errortime) }} type="text" className="config-input" placeholder="katowice" value={inputValue} onChange={(e) => { inputChange(e, setInptValue) }} />
+
             <input ref={submit} type="submit" className="config-submit" value="Search" onClick={() => {
                 handleClick(inputValue, input, appError, obsEle, setInptValue, setData, setErrorTime, errortime);
             }} />
